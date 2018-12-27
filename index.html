@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/tachyons.css">
+	<style type="text/css">
+		.colors{
+			color: #005291;
+		}
+		.largeBlue{
+			color: rgb(0, 82, 145);
+		}
+		.smallGreen{
+			color: rgb(36, 180, 126);
+		}
+	</style>
+</head>
+<body class="w-100" style="background-color:#e8f8fe;opacity:1">
+    <script src="https://www.unpkg.com/mithril/mithril.js"></script>
+    <script>
+    var root    = document.body
+    var content =  {
+    	view: function() {
+    		return m('main', [
+    			m('header', {class: "trasparent ph5"}, [
+    				m('div', {class: "w-50 w-30-ns dib v-top"}, [
+    					m('a', {class: "cover link pointer",
+    						href: "index.html"}, 
+    					    m('img', {
+    					    	src: "img/Hygeia-logo.svg",
+    					    	title: "Logo",
+    					    	alt: "Hygeia Logo",	
+    					    	class: "w4"
+    					    }) )
+    					]),
+    				m('nav', {class: "w-50 w-70-ns dib tc pt3 v-top"}, [
+    					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Our Health Plan"),
+    					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Hospital Networks"),
+    					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Blogs"),
+    					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "About Us"),
+    					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Contact Us"),
+    					]),
+    				]),
+    			m('section', {class: "ph5"}, [
+    				m('div', [
+    					m('div', {class: "w-100 w-50-ns dib-ns"},[
+    						m('h1', {class: "largeBlue fw4 f2 mw6"},
+    							"Buy a plan for you & your love ones"),
+    						m('span', {class: "smallGreen fw1 f6 mw6"},
+    							"Buy a plan for you & your love ones")]),
+    					m('div', {class: "w-100 w-50-ns dib-ns"})])]),
+    			m('footer', {class: "blue bg-green vh-25 tc"}, "Send"),
+    			])
+    	}
+    }
+
+    m.mount(root, content)
+    </script>
+</body>
+</html>
