@@ -8,11 +8,22 @@
 		.colors{
 			color: #005291;
 		}
-		.largeBlue{
+		.colorBlue{
 			color: rgb(0, 82, 145);
 		}
 		.smallGreen{
 			color: rgb(36, 180, 126);
+		}
+		body {
+			font-family: "Open Sans";
+			line-height: 23px;
+			letter-spacing: .5px;
+			font-weight: 400;
+			font-style: normal;
+			font-size: 14px;
+		}
+		.buyPlan {
+			background: linear-gradient(60deg, rgb(22, 129, 211) 0%, rgb(132, 224, 100) 100%);
 		}
 	</style>
 </head>
@@ -24,7 +35,7 @@
     	view: function() {
     		return m('main', [
     			m('header', {class: "trasparent ph5"}, [
-    				m('div', {class: "w-50 w-30-ns dib v-top"}, [
+    				m('div', {class: "w-100 w-30-ns dib v-top"}, [
     					m('a', {class: "cover link pointer",
     						href: "index.html"}, 
     					    m('img', {
@@ -34,7 +45,7 @@
     					    	class: "w4"
     					    }) )
     					]),
-    				m('nav', {class: "w-50 w-70-ns dib tc pt3 v-top"}, [
+    				m('nav', {class: "w-100 w-70-ns dib tc pt3 v-top"}, [
     					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Our Health Plan"),
     					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Hospital Networks"),
     					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Blogs"),
@@ -42,14 +53,41 @@
     					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Contact Us"),
     					]),
     				]),
-    			m('section', {class: "ph5"}, [
+    			m('section', {class: "ph2 ph4-m ph5-l"}, [
     				m('div', [
-    					m('div', {class: "w-100 w-50-ns dib-ns"},[
-    						m('h1', {class: "largeBlue fw4 f2 mw6"},
-    							"Buy a plan for you & your love ones"),
-    						m('span', {class: "smallGreen fw1 f6 mw6"},
-    							"Buy a plan for you & your love ones")]),
-    					m('div', {class: "w-100 w-50-ns dib-ns"})])]),
+    					m('div', {class: "w-100 w-50-ns dib-ns v-top"},[
+    						m('article', {class: "mt5-ns pt2 pt4-ns"}, [
+								m('h1', {class: "colorBlue lh-title f4 f3-m f1-l mw6"},
+									"Buy a plan for you & your love ones"),
+								m('span', {class: "smallGreen f5 measure-narrow"},
+									"Lorem ipsun uidh sjbf sbse ewbrn qwerty wery qwer qwer Lorem ipsun uidh sjbf sbse ewbrn qwerty wery qwer qwer"),
+								m('div', {class: "pt2 pt5-ns"}, [
+									m('div', {class: "w-50 dib"}, [
+										m('h3', {class: "colorBlue f4 f3-m f2-l fw3"}, "Need a plan?"),
+										m('a', {class: "buyPlan br-pill link pa2 pa3-ns fw3 fw6-ns white", 
+										    href: "index.html"}, "Need a plan?"),
+									]),
+									m('div', {class: "w-50 dib"}, [
+										m('h3', {class: "colorBlue f4 f3-m f2-l fw3"}, "Provider?"),
+										m('a', {class: "br-pill link colorBlue ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+										    href: "index.html"}, "Log in to HyDirect"),
+									]),
+								])
+							])]),
+    					m('div', {class: "w-100 w-50-ns dib-ns v-top"}, [
+							m('a', {class: ""}, 
+								m('img', {
+									src: "img/img-fam.png",
+									title: "Family health",
+									alt: "Family"
+								}) )
+						])]),
+					m('div', [
+						m('div', {class: "pt5"}, [
+							m('h2', {class: "colorBlue lh-title f4 f3-m f1-l mw6"}, "Our Plans")
+						])
+					])
+				]),
     			m('footer', {class: "blue bg-green vh-25 tc"}, "Send"),
     			])
     	}
