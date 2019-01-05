@@ -53,8 +53,9 @@
     					m('a', {class: "f6 fw6 colors dim link pointer mr2 mr3-m mr4-l"}, "Contact Us"),
     					]),
     				]),
-    			m('section', {class: "ph2 ph4-m ph5-l"}, [
-    				m('div', [
+    			m('section', {class: ""}, [
+					// first section
+    				m('div', {class: "ph2 ph4-m ph5-l bg-white"}, [
     					m('div', {class: "w-100 w-50-ns dib-ns v-top"},[
     						m('article', {class: "mt5-ns pt2 pt4-ns"}, [
 								m('h1', {class: "colorBlue lh-title f4 f3-m f1-l mw6"},
@@ -82,14 +83,150 @@
 									alt: "Family"
 								}) )
 						])]),
-					m('div', [
-						m('div', {class: "pt5"}, [
-							m('h2', {class: "colorBlue lh-title f4 f3-m f1-l mw6"}, "Our Plans")
+						// second section
+					m('div', {class: "pv2 ph2 ph4-m ph5-l bg-white"}, [
+						m('div', {class: "pv3 pv5-ns"}, [
+							m('h2', {class: "colorBlue lh-title f4 f3-m f1-l mw6"}, "Our Plans"),
+							m('span', {class: "colorBlue f3 fw1 measure-narrow"}, "Choose from a wide variety of plans for you, your family, & your staff.")
+						]),
+						//first image gallery
+						m('div', {class: "mv2 mv5-ns"}, [
+							m('div', {class: "w-third-ns dib"}, [
+								m('div', {class: "pr2 pr3-l"}, [
+									m('img', {
+										src: "img/img-man.jpg",
+										title: "Parent",
+										alt: "Family"
+									})
+								]),
+								m('div', {class: "tc ph5 ph3-m pv3"}, [
+									m('a', {class: "br-pill link colorBlue db ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+												href: "index.html"}, "Individual"),
+								])
+							]),
+							m('div', {class: "w-third-ns dib"}, [
+								m('div', {class: "ph2 ph2-l"}, [
+									m('img', {
+										src: "img/img-fam1.jpg",
+										title: "Family",
+										alt: "Family"
+									})
+								]),
+								m('div', {class: "tc ph5 ph3-m pv3"}, [
+									m('a', {class: "br-pill link colorBlue db ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+												href: "index.html"}, "Families"),
+								])
+							]),
+							m('div', {class: "w-third-ns dib"}, [
+								m('div', {class: "pl2 pl3-l"}, [
+									m('img', {
+										src: "img/img-grand.jpg",
+										title: "Grand Parent",
+										alt: "Family"
+									})
+								]),
+								m('div', {class: "tc ph5 ph3-m pv3"}, [
+									m('a', {class: "br-pill link colorBlue db ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+												href: "index.html"}, "Senior Citizens"),
+								])
+							])
+						]),
+						//second image gallery
+						m('div', {class: "mv2 mv5-ns"}, [
+							m('div', {class: "w-third-ns dib"}, [
+								m('div', {class: "pr2 pr3-l"}, [
+									m('img', {
+										src: "img/img-preg.jpg",
+										title: "Parent",
+										alt: "Family"
+									})
+								]),
+								m('div', {class: "tc mv2 mv4-ns ph5 ph3-m pv3"}, [
+									m('a', {class: "br-pill link colorBlue db ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+												href: "index.html"}, "Pregnant Women"),
+								])
+							]),
+							m('div', {class: "w-third-ns dib"}, [
+								m('div', {class: "ph2 ph2-l"}, [
+									m('img', {
+										src: "img/img-sme.jpg",
+										title: "Family",
+										alt: "Family"
+									})
+								]),
+								m('div', {class: "tc mv2 mv4-ns ph5 ph3-m pv3"}, [
+									m('a', {class: "br-pill link colorBlue db ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+												href: "index.html"}, "S.M.Es"),
+								])
+							]),
+							m('div', {class: "w-third-ns dib"}, [
+								m('div', {class: "pl2 pl3-l"}, [
+									m('img', {
+										src: "img/img-gym.jpg",
+										title: "Grand Parent",
+										alt: "Family"
+									})
+								]),
+								m('div', {class: "tc mv2 mv4-ns ph5 ph3-m pv3"}, [
+									m('a', {class: "br-pill link colorBlue db ba b--colorBlue pa2 pa3-ns fw3 fw6-ns", 
+												href: "index.html"}, "Gym & Spa"),
+								])
+							])
+						])
+					]),
+					//map section
+					m('div', {class: "trasparent ph2 ph4-m ph5-l"}, [
+						m('div', {class: "pv3 pv5-ns"}, [
+							m('h2', {class: "colorBlue lh-title f4 f3-m f1-l mw6"}, "Find a Provider Near You"),
+							m('span', {class: "colorBlue f3 fw1 measure-narrow"}, "Choose the best and closest provider for you, your family, and your staff.")
 						])
 					])
 				]),
-    			m('footer', {class: "blue bg-green vh-25 tc"}, "Send"),
-    			])
+				//footer
+    			m('footer', {class: "transparent pt3-ns"}, [
+					m('div', {class: "mv2 mv3-ns ph2 ph4-m ph5-l"}, [
+						//1st
+						m('aside', {class: "v-top w-100 w-50-m w-25-l dib tc"}, [
+							m('h2', {class: "colorBlue f4"}, "Download Our App"),
+							m('div', {class: "mt2 mt3-ns"}, [
+								m('img', {
+									src: "img/img-mobile.png",
+									title: "Grand Parent",
+									alt: "Family",
+									class: "w4"
+								})
+							])
+						]),
+						//2nd
+						m('aside', {class: "v-top w-100 w-50-m w-25-l dib"}, [
+							m('h2', {class: "colorBlue f4"}, "Company"),
+							m('a', {class: "colorBlue f4 db"}, "About Us"),
+							m('a', {class: "colorBlue f4 db"}, "Testimonials"),
+							m('a', {class: "colorBlue f4 db"}, "Our Health Plans"),
+							m('a', {class: "colorBlue f4 db"}, "Hospital Networks"),
+							m('a', {class: "colorBlue f4 db"}, "HyDirect"),
+							m('a', {class: "colorBlue f4 db"}, "Download Our App")
+						]),
+						//3rd
+						m('aside', {class: "v-top w-100 w-50-m w-25-l dib"}, [
+							m('h2', {class: "colorBlue f4"}, "Resources"),
+							m('a', {class: "colorBlue f4 db"}, "Blog"),
+							m('a', {class: "colorBlue f4 db"}, "Media"),
+							m('a', {class: "colorBlue f4 db"}, "F.A.Q's"),
+							m('a', {class: "colorBlue f4 db"}, "Privacy Policy"),
+							m('a', {class: "colorBlue f4 db"}, "Legal"),
+							m('a', {class: "colorBlue f4 db"}, "Careers")
+						]),
+						//4th
+						m('aside', {class: "v-top w-100 w-50-m w-25-l dib"}, [
+							m('h2', {class: "colorBlue f4"}, "Contact"),
+							m('span', {class: "measure-narrow colorBlue"}, "Head Office, Floors 6 – 7, Elephant House, 214, Broad street, Lagos Island."),
+							m('span', {class: "colorBlue db mv2"}, "0700 HYGEIA HMO (0700- 494342- 466)"),
+							m('a', {class: "colorBlue"}, "hycare@hygeiahmo.com​")
+						])
+					])
+				]),
+    		])
     	}
     }
 
